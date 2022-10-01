@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;   
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: salmon ;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: #0ee4ce;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: peachpuff;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('imagehome.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+font-size: 2rem;
+margin-bottom: 20px;
+}
+#intro p{
+    font-size: 1.5rem;
+    padding-bottom: 10px ;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    align-items: center;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 580px;
+    height: 360px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: powderblue;
+    color: black;
+    align-items: center;
+}
+.icons ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.icons ul li{
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.icons ul li a{
+    text-decoration: salmon ;
+    color: brown;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.icons ul li a:hover{
+    background-color: red;
+    color:white;
+    box-shadow: 0 0 10px white;
+}
